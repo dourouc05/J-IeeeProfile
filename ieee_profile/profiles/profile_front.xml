@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="profile">
+		<fieldset name="ieee_profile"
+			label="PLG_USER_IEEE_PROFILE_SLIDER_LABEL"
+		>
+			<field
+				name="fsa"
+				type="checkbox"
+				description="PLG_USER_IEEE_PROFILE_FIELD_FSA_DESC"
+				label="PLG_USER_IEEE_PROFILE_FIELD_FSA_LABEL"
+			/>
+			<field
+				name="mesa"
+				type="checkbox"
+				description="PLG_USER_IEEE_PROFILE_FIELD_MESA_DESC"
+				label="PLG_USER_IEEE_PROFILE_FIELD_MESA_LABEL"
+			/>
+			<field
+				name="ieee"
+				type="integer"
+				default="0"
+				description="PLG_USER_IEEE_PROFILE_FIELD_MESA_DESC"
+				label="PLG_USER_IEEE_PROFILE_FIELD_MESA_LABEL"
+				first="1"
+				last="10000000000000"
+				step="1"
+			/>
+		</fieldset>
+	</fields>
+</form>
