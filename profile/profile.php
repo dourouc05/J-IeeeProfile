@@ -253,42 +253,68 @@ class plgUserProfile extends JPlugin
 		/* <IEEE> */
 
 		// Toggle whether the __fsa field is required.
-		if ($this->params->get('register-require___fsa', 1) > 0) {
+		if ($this->params->get('register-require___fsa', 1) > 0)
+		{
 			$form->setFieldAttribute('__fsa', 'required', $this->params->get('register-require___fsa') == 2, 'profile');
 		}
-		else {
+		else
+		{
 			$form->removeField('__fsa', 'profile');
 		}
 
 		// Toggle whether the __mesa field is required.
-		if ($this->params->get('register-require___mesa', 1) > 0) {
+		if ($this->params->get('register-require___mesa', 1) > 0)
+		{
 			$form->setFieldAttribute('__mesa', 'required', $this->params->get('register-require___mesa') == 2, 'profile');
 		}
-		else {
+		else
+		{
 			$form->removeField('__mesa', 'profile');
 		}
 
 		// Toggle whether the __ieee field is required.
-		if ($this->params->get('register-require___ieee', 1) > 0) {
+		if ($this->params->get('register-require___ieee', 1) > 0)
+		{
 			$form->setFieldAttribute('__ieee', 'required', $this->params->get('register-require___ieee') == 2, 'profile');
 		}
-		else {
+		else
+		{
 			$form->removeField('__ieee', 'profile');
 		}
 
 		// Toggle whether the __paid field is required.
-		if ($this->params->get('register-require___paid', 1) > 0) {
+		if ($this->params->get('register-require___paid', 1) > 0)
+		{
 			$form->setFieldAttribute('__paid', 'required', $this->params->get('register-require___paid') == 2, 'profile');
 		}
-		else {
+		else
+		{
 			$form->removeField('__paid', 'profile');
 		}
 
 		// Toggle whether the __encoded field is required.
-		if ($this->params->get('register-require___encoded', 1) > 0) {
+		if ($this->params->get('register-require___encoded', 1) > 0)
+		{
 			$form->setFieldAttribute('__encoded', 'required', $this->params->get('register-require___encoded') == 2, 'profile');
 		}
-		else {
+		else
+		{
+			$form->removeField('__encoded', 'profile');
+		}
+		
+		// var_dump($form->getName());
+		
+		// ADMIN
+		// com_users.user
+		// FRONTEND
+		// com_users.registration
+		// com_users.profile
+		// UNKNOWN
+		// com_admin.profile
+		
+		if ($form->getName() != 'com_users.user')
+		{
+			$form->removeField('__paid', 'profile');
 			$form->removeField('__encoded', 'profile');
 		}
 		
