@@ -249,6 +249,50 @@ class plgUserProfile extends JPlugin
 		else {
 			$form->removeField('dob', 'profile');
 		}
+		
+		/* <IEEE> */
+
+		// Toggle whether the __fsa field is required.
+		if ($this->params->get('register-require___fsa', 1) > 0) {
+			$form->setFieldAttribute('__fsa', 'required', $this->params->get('register-require___fsa') == 2, 'profile');
+		}
+		else {
+			$form->removeField('__fsa', 'profile');
+		}
+
+		// Toggle whether the __mesa field is required.
+		if ($this->params->get('register-require___mesa', 1) > 0) {
+			$form->setFieldAttribute('__mesa', 'required', $this->params->get('register-require___mesa') == 2, 'profile');
+		}
+		else {
+			$form->removeField('__mesa', 'profile');
+		}
+
+		// Toggle whether the __ieee field is required.
+		if ($this->params->get('register-require___ieee', 1) > 0) {
+			$form->setFieldAttribute('__ieee', 'required', $this->params->get('register-require___ieee') == 2, 'profile');
+		}
+		else {
+			$form->removeField('__ieee', 'profile');
+		}
+
+		// Toggle whether the __paid field is required.
+		if ($this->params->get('register-require___paid', 1) > 0) {
+			$form->setFieldAttribute('__paid', 'required', $this->params->get('register-require___paid') == 2, 'profile');
+		}
+		else {
+			$form->removeField('__paid', 'profile');
+		}
+
+		// Toggle whether the __encoded field is required.
+		if ($this->params->get('register-require___encoded', 1) > 0) {
+			$form->setFieldAttribute('__encoded', 'required', $this->params->get('register-require___encoded') == 2, 'profile');
+		}
+		else {
+			$form->removeField('__encoded', 'profile');
+		}
+		
+		/* </IEEE> */
 
 		return true;
 	}

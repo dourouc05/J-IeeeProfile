@@ -124,6 +124,46 @@
 					label="PLG_USER_PROFILE_FIELD_DOB_LABEL"
 					description="PLG_USER_PROFILE_FIELD_DOB_DESC"
 				 />
+				
+			<!-- <IEEE> -->
+			<field
+					name="__fsa"
+					type="radio"
+					label="PLG_USER_PROFILE_FIELD___FSA_LABEL"
+					description="PLG_USER_PROFILE_FIELD___FSA_DESC">
+					<option	value="1">PLG_USER_PROFILE_FIELD___FSA_YES</option>
+					<option	value="0">PLG_USER_PROFILE_FIELD___FSA_NO</option>
+			</field>
+			<field
+					name="__mesa"
+					type="radio"
+					label="PLG_USER_PROFILE_FIELD___MESA_LABEL"
+					description="PLG_USER_PROFILE_FIELD___MESA_DESC">
+					<option	value="1">PLG_USER_PROFILE_FIELD___FSA_YES</option>
+					<option	value="0">PLG_USER_PROFILE_FIELD___FSA_NO</option>
+			</field>
+			<field
+					name="__ieee"
+					type="text"
+					label="PLG_USER_PROFILE_FIELD___IEEE_LABEL"
+					description="PLG_USER_PROFILE_FIELD___IEEE_DESC"/>
+			<field
+					name="__paid"
+					type="radio"
+					description="PLG_USER_PROFILE_FIELD___PAID_DESC"
+					label="PLG_USER_PROFILE_FIELD___PAID_LABEL">
+					<option	value="1">PLG_USER_PROFILE_FIELD___FSA_YES</option>
+					<option	value="0">PLG_USER_PROFILE_FIELD___FSA_NO</option>
+			</field>
+			<field
+					name="__encoded"
+					type="radio"
+					description="PLG_USER_PROFILE_FIELD___ENCODED_DESC"
+					label="PLG_USER_PROFILE_FIELD___ENCODED_LABEL">
+					<option	value="1">PLG_USER_PROFILE_FIELD___FSA_YES</option>
+					<option	value="0">PLG_USER_PROFILE_FIELD___FSA_NO</option>
+			</field>
+			<!-- </IEEE> -->
 		</fieldset>
 	</fields>
 </form>
